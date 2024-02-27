@@ -1,1 +1,53 @@
 Explain the code execution based on the order of the messages logged in src/quiz/promise-2darray.txt.
+
+Promise Creation (sumPromise1):
+
+"Sum called..." is logged.
+The array is valid, so a sum calculation is scheduled with setTimeout.
+"returning from sum" is logged.
+sumPromise1 is logged immediately.
+Promise Creation (sumPromise2):
+
+"Sum called..." is logged.
+The input is invalid (not an array), so the promise is immediately rejected.
+"rejecting..." is logged.
+"returning from sum" is logged.
+sumPromise2 is logged immediately.
+Asynchronous Execution (sumPromise1):
+
+After a short delay, the sum calculation completes.
+"resolving..." is logged.
+sumPromise1 is resolved with the sum.
+Promise Handling (sumPromise1):
+
+The .then() block for sumPromise1 is executed.
+"Result from sumPromise1:" is logged, followed by the calculated sum.
+Promise Handling (sumPromise2):
+
+The .catch() block for sumPromise2 is executed.
+"Error from sumPromise2:" is logged, followed by the error message.Promise Creation (sumPromise1):
+
+"Sum called..." is logged.
+The array is valid, so a sum calculation is scheduled with setTimeout.
+"returning from sum" is logged.
+sumPromise1 is logged immediately.
+Promise Creation (sumPromise2):
+
+"Sum called..." is logged.
+The input is invalid (not an array), so the promise is immediately rejected.
+"rejecting..." is logged.
+"returning from sum" is logged.
+sumPromise2 is logged immediately.
+Asynchronous Execution (sumPromise1):
+
+After a short delay, the sum calculation completes.
+"resolving..." is logged.
+sumPromise1 is resolved with the sum.
+Promise Handling (sumPromise1):
+
+The .then() block for sumPromise1 is executed.
+"Result from sumPromise1:" is logged, followed by the calculated sum.
+Promise Handling (sumPromise2):
+
+The .catch() block for sumPromise2 is executed.
+"Error from sumPromise2:" is logged, followed by the error message.
